@@ -3,7 +3,7 @@
  * deploy, rather than hardcoding the URL inline in the fetch call.
  * Set this to your deployed backend URL after you deploy it.
  */
-const API_BASE_URL = "http://localhost:3001";
+const API_BASE_URL = "https://page-pulse-api-1fzx.onrender.com";
 
 const form = document.getElementById("audit-form");
 const input = document.getElementById("url-input");
