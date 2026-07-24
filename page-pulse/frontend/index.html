@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Page Pulse — Instant Page Audits</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Page Pulse</h1>
+      <p class="tagline">Paste a URL. Get a straight read on how the page is actually doing.</p>
+    </header>
+
+    <form id="audit-form">
+      <input
+        type="text"
+        id="url-input"
+        placeholder="https://example.com"
+        autocomplete="off"
+        required
+      />
+      <button type="submit" id="submit-btn">Audit</button>
+    </form>
+
+    <p id="status" class="status" aria-live="polite"></p>
+
+    <section id="report" class="report hidden">
+      <div class="report-grid">
+        <div class="stat-card">
+          <span class="stat-label">HTTP Status</span>
+          <span class="stat-value" id="stat-status">—</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Response Time</span>
+          <span class="stat-value" id="stat-time">—</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">H1 Count</span>
+          <span class="stat-value" id="stat-h1">—</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Word Count</span>
+          <span class="stat-value" id="stat-words">—</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-label">Images Missing Alt</span>
+          <span class="stat-value" id="stat-alt">—</span>
+        </div>
+      </div>
+
+      <div class="detail-block">
+        <h2>Title</h2>
+        <p id="detail-title">—</p>
+      </div>
+      <div class="detail-block">
+        <h2>Meta Description</h2>
+        <p id="detail-meta">—</p>
+      </div>
+    </section>
+
+    <footer>
+      Built for <a href="https://digitalheroesco.com" target="_blank" rel="noopener">Digital Heroes Training Task</a>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
